@@ -124,6 +124,7 @@ const fetchISSFlyOverTimes = function(coords, callback) {
         // console.log(data);
         for (let point in data){
           callback(null,`Next pass at ${Date(data[point].risetime)} for ${data[point].duration} seconds!`);
+          // callback(null,data);
         }
       });
     });
